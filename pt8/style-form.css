@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 15%;
+  color: #71edd4;
+  font-size: large;
+}
+.form-action header {
+  margin: 0 0 20px 0;
+}
+.form-action header div {
+  font-size: 90%;
+  color: #999;
+}
+.form-action header h2 {
+  text-align: center;
+  color: rgb(220, 141, 220);
+  margin: 0 0 5px 0;
+}
+.form-action > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+.form-action > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+.form-action > div > label,
+legend {
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+.form-action > div > div,
+.form-action > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+.form-action > div > fieldset label {
+  font-size: 90%;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+textarea {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border: 1px solid #ccc; /* Ganti dengan warna border yang sesuai */
+  border-radius: 5px; /* Atur tingkat bulat sudut (dalam piksel) */
+}
+
+input[type='date'],
+select > option {
+  border: 1px solid #ccc; /* Ganti dengan warna border yang sesuai */
+  border-radius: 5px; /* Atur tingkat bulat sudut (dalam piksel) */
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'] {
+  width: 50%;
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+.transparent-blur-button {
+  background: transparent;
+  border: 2px solid rgb(58, 55, 55); /* Warna garis luar tombol */
+  color: #71edd4; /* Warna teks */
+  padding: 0.5rem;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  /* z-index: 1; */
+}
+
+.transparent-blur-button:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Warna latar belakang ketika tombol diberi hover */
+  color: black; /* Warna teks ketika tombol diberi hover */
+}
+
+@media (max-width: 600px) {
+  .form-action > div {
+    margin: 0 0 15px 0;
+  }
+  .form-action > div > label,
+  legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  .form-action > div > div,
+  .form-action > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  textarea,
+  select {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .form-action > div > label,
+  legend {
+    text-align: right;
+  }
+}

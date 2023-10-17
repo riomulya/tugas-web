@@ -1,0 +1,67 @@
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+p,
+h5 {
+  font-family: 'Quattrocento', serif;
+  font-size: 1.3em;
+  color: #03dac6;
+}
+
+.about {
+  text-align: center;
+  padding: 1.5% 5%;
+}
+
+.tentang {
+  margin: 2rem;
+}
+
+.btn {
+  box-shadow: 5px;
+  padding: 0.4rem;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+.btn:hover {
+  background-color: rgb(158, 136, 107);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.thumbnail {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+}
+cite {
+  color: #444;
+  font-family: 'Hoefler Text', Georgia, Garamond, Times, serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 100%;
+  font-size: 1em;
+  font-variant: small-caps;
+}
+
+.footer {
+  margin: 28.5% 0 0 0;
+}
+
+.text-center {
+  margin: 1rem;
+}

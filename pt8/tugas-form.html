@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-form.css">
+    <link rel="stylesheet" href="background.css">
+    <script src="script/drag.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body id="box1" class="box blurred-bg tinted">
+    <!-- <div id="box1" class="box blurred-bg tinted"> -->
+    <div class="content">
+        <h1 class="title-form">Free Registration</h1>
+        <form action="#" class="form-action">
+
+            <div>
+                <label class="desc" id="title1" for="Field1">Nama</label>
+                <div>
+                    <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+                </div>
+            </div>
+
+            <div>
+                <label class="desc" id="title3" for="Field3">
+                    Tanggal Lahir
+                </label>
+                <div>
+                    <input id="Field3" name="Field3" type="date" spellcheck="false" value="" maxlength="255"
+                        tabindex="3">
+                </div>
+            </div>
+
+            <div>
+                <label class="desc" id="title4" for="Field4">
+                    Alamat
+                </label>
+
+                <div>
+                    <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <label class="desc" id="title1" for="Field1">Kota</label>
+                <div>
+                    <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+                </div>
+            </div>
+            <div>
+                <label class="desc" id="title106" for="Field106">
+                    Pekerjaan
+                </label>
+                <div>
+                    <select id="Field106" name="Field106" class="field select medium" tabindex="11">
+                        <option value="Petani">Petani</option>
+                        <option value="Nelayan">Nelayan</option>
+                        <option value="Karyawan">Karyawan</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <fieldset>
+
+                    <legend id="title5" class="desc">Jenis Kelamin
+                    </legend>
+
+                    <div>
+                        <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                        <div>
+                            <input id="Field5_0" name="Field5" type="radio" value="FLaki Laki" tabindex="5"
+                                checked="checked">
+                            <label class="choice" for="Field5_0">Laki Laki</label>
+                        </div>
+                        <div>
+                            <input id="Field5_1" name="Field5" type="radio" value="Perempuan" tabindex="6">
+                            <label class="choice" for="Field5_1">Perempuan</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend id="title6" class="desc">
+                        Hobby
+                    </legend>
+                    <div>
+                        <div>
+                            <input id="Field6" name="Field6" type="checkbox" value="Reading" tabindex="8">
+                            <label class="choice" for="Field6">Reading</label>
+                        </div>
+                        <div>
+                            <input id="Field7" name="Field7" type="checkbox" value="Sport" tabindex="9">
+                            <label class="choice" for="Field7">Sport</label>
+                        </div>
+                        <div>
+                            <input id="Field8" name="Field8" type="checkbox" value="Singing" tabindex="10">
+                            <label class="choice" for="Field8">Singing</label>
+                        </div>
+                        <div>
+                            <input id="Field9" name="Field9" type="checkbox" value="Travelling" tabindex="11">
+                            <label class="choice" for="Field9">Travelling</label>
+                            </span>
+                        </div>
+                </fieldset>
+            </div>
+
+
+
+            <div>
+                <div>
+                    <input id="saveForm" class="transparent-blur-button" name="saveForm" type="submit" value="Submit">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <!-- </div> -->
+
+    <!-- <form action="#">
+
+        <header>
+            <h2>Free Registration</h2>
+        </header>
+
+        <div>
+            <label class="desc" id="title1" for="Field1">Nama</label>
+            <div>
+                <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title3" for="Field3">
+                Tanggal Lahir
+            </label>
+            <div>
+                <input id="Field3" name="Field3" type="date" spellcheck="false" value="" maxlength="255" tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title4" for="Field4">
+                Alamat
+            </label>
+
+            <div>
+                <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title1" for="Field1">Kota</label>
+            <div>
+                <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+        </div>
+        <div>
+            <label class="desc" id="title106" for="Field106">
+                Select a Choice
+            </label>
+            <div>
+                <select id="Field106" name="Field106" class="field select medium" tabindex="11">
+                    <option value="Petani">Petani</option>
+                    <option value="Nelayan">Nelayan</option>
+                    <option value="Karyawan">Karyawan</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <fieldset>
+
+                <legend id="title5" class="desc">Jenis Kelamin
+                </legend>
+
+                <div>
+                    <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                    <div>
+                        <input id="Field5_0" name="Field5" type="radio" value="FLaki Laki" tabindex="5"
+                            checked="checked">
+                        <label class="choice" for="Field5_0">Laki Laki</label>
+                    </div>
+                    <div>
+                        <input id="Field5_1" name="Field5" type="radio" value="Perempuan" tabindex="6">
+                        <label class="choice" for="Field5_1">Perempuan</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend id="title6" class="desc">
+                    Hobby
+                </legend>
+                <div>
+                    <div>
+                        <input id="Field6" name="Field6" type="checkbox" value="Reading" tabindex="8">
+                        <label class="choice" for="Field6">Reading</label>
+                    </div>
+                    <div>
+                        <input id="Field7" name="Field7" type="checkbox" value="Sport" tabindex="9">
+                        <label class="choice" for="Field7">Sport</label>
+                    </div>
+                    <div>
+                        <input id="Field8" name="Field8" type="checkbox" value="Singing" tabindex="10">
+                        <label class="choice" for="Field8">Singing</label>
+                    </div>
+                    <div>
+                        <input id="Field9" name="Field9" type="checkbox" value="Travelling" tabindex="11">
+                        <label class="choice" for="Field9">Travelling</label>
+                        </span>
+                    </div>
+            </fieldset>
+        </div>
+
+
+
+        <div>
+            <div>
+                <input id="saveForm" name="saveForm" type="submit" value="Submit">
+            </div>
+        </div>
+
+    </form> -->
+</body>
+
+</html>

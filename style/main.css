@@ -1,0 +1,27 @@
+/* Scrollbar */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  display: block;
+  width: 0.625rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, hsl(206, 50%, 30%)),
+    color-stop(0.72, hsl(218, 28%, 20%)),
+    color-stop(0.86, hsl(219, 60%, 20%))
+  );
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
